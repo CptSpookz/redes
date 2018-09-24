@@ -6,7 +6,22 @@ Para a primeira etapa do projeto de Redes de Computadores foi desenvolvido um se
 
 Para rodar o servidor:
 - Clonar o repositório
-- ./server.py
+```shell
+git clone https://github.com/joaobarbirato/redes
+```
+
+- Executar:
+```shell
+./server.py
+```
 
 Para adicionar arquivos:
-- curl -F 'nomedoarquivo=@caminhodoarquivo' http://localhost:1026
+```shell
+curl -X POST -F 'nomedoarquivo=@caminhodoarquivo' http://localhost:1026
+```
+
+Para ver o conteúdo de arquivos enviados:
+```shell
+curl http://localhost:1026/<arquivo>
+```
+ou acesse http://localhost:1026/<arquivo> no browser.
